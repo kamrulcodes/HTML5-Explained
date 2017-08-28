@@ -1,0 +1,105 @@
+<!-- This is how a comment is written in HTML. -->
+<!-- Comments about a line of code are usually written before that line.
+     There are some exceptions like Doctype declaration (see line 11). -->
+<!-- Please remove all these comments from before the doctype declaretion in line 11. -->
+
+<!-- Document Type Declaration for HTML5. -->
+<!-- Document Type Declaration must be the very first thing in your HTML document.
+     So, you must remove all these comments from your HTML code. -->
+<!-- Doctype instructs the browser about the version of HTML the page is written in. -->
+<!-- The <!DOCTYPE> declaration is not an HTML tag. -->
+<!DOCTYPE html>
+
+<!-- The <html> tag represents the root of an HTML document. -->
+<!-- The <html> tag is the container for all other HTML elements -->
+<!-- The attribute "lang" is a Global Attribute which defines the language of the eliment.
+     The value of this attribute is the language_code of the selected language.
+     Like, "en" is for English, "bn" is for Bengaly, "ar" is for Arabic etc. -->
+
+<!-- Global Attributes can be used with any html tag.
+     They are not specific to any perticular tag. -->
+
+<!-- More on language codes - 
+      https://en.wikipedia.org/wiki/ISO_639-3#Language_codes 
+      https://www.sitepoint.com/iso-2-letter-language-codes/ -->
+<html lang="en">
+
+    <!-- The HTML <head> element provides general information (metadata) about the
+         document, including its title and links to its scripts and style sheets. -->
+    <head>
+
+        <!-- The HTML <meta> element represents metadata that cannot be
+             represented by other HTML meta-related elements,
+             like <base>, <link>, <script>, <style> or <title>. -->
+
+        <!-- Charset declares the page's character encoding. -->
+        <!-- Authors are encouraged to use UTF-8. -->
+        <!-- The <meta> element declaring the encoding must be inside the <head> element
+             and within the first 1024 bytes of the HTML. -->
+        <!-- It is strongly recommended to define the character encoding.
+             If a page's encoding is undefined, cross-scripting techniques are possible,
+             such as the UTF-7 fallback cross-scripting technique. -->
+        <meta charset="UTF-8">
+
+        <!-- "name" attribute defines the name of a piece of document-level metadata.
+             This metadata name is associated with the value contained by
+             the content attribute. -->
+        <!-- viewport gives hints about the size of the initial size of the viewport.
+             Used by mobile devices only. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Comma seperated list of keywords for search engines. 
+             Although, Google says they do not use it anymore. -->
+        <meta name="keywords" content="comma, seperated, keywords" />
+
+        <!-- Meta description tag is important for search engines. Google sometimes 
+             use it as snippet in its search result page. Do not fill this tag with 
+             keywords. Instead try to write really compelling description of the
+             page. This may help increasing Click Through Rate. -->
+        <meta name="description" content="A description of the page" />
+
+        <!-- http-equiv attribute can contain the name of an HTTP header,
+             hence the attribute name http-equivalent.
+             It defines an instruction that can alter server and user-agent behavior.  -->
+
+        <!-- In Internet Explorer "X-UA-Compatible" specifies legacy document modes.
+             This allows a webpage to be displayed as if it were viewed by an 
+             earlier version of the browser. Using this we can render our page 
+             in different versions of ie rendering engine. -->
+
+        <!-- Here are the options:
+        
+            "IE=edge"
+            "IE=11"
+            "IE=EmulateIE11"
+            "IE=10"
+            "IE=EmulateIE10"
+            "IE=9"
+            "IE=EmulateIE9
+            "IE=8"
+            "IE=EmulateIE8"
+            "IE=7"
+            "IE=EmulateIE7"
+            "IE=5" -->
+            
+        <!-- We nolonger need this because, we do not want to support IE9 & previouses. -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Redirect page after 3 seconds -->
+        <!-- <meta http-equiv="refresh" content="3;url=https://www.mozilla.org"> -->
+
+        <!-- External stylesheets link. -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Title of the document.  -->
+        <title>Document</title>
+
+        <!-- This meta tag instructs search engines whether crawl the page or not.
+             Default is index and follow.  -->
+        <meta name="robots" content="noindex,nofollow">
+    </head>
+    <body>
+        
+    </body>
+</html>
+
