@@ -1,5 +1,5 @@
 # HTML5 Explained
-This is a detail HTML5 file with all the important HTML5 tags explained using comment.
+This ("html5 explained.htm") is a detail HTML5 file with all the important HTML5 tags explained using comments.
 
 HTML pages are basically text files with .htm or .html extension.
 
